@@ -1,0 +1,40 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <div class="container">
+        <div class="card card-container" style="background-color:white">
+         
+            <form class="form-signin"  >
+                <div class="text-center">
+                    <h5>{{title}}</h5>
+                </div>
+                <br>
+                <input type="name" id="name" class="form-control" placeholder="Account number" onfocus="this.placeholder = ''" 
+                onblur="this.placeholder = 'Account number'" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" onfocus="this.placeholder = ''" 
+                onblur="this.placeholder = 'Password'" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me">Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin snarl-demo text-center"  (click)="myFuction()" type="submit" value="customer-dashboard">Sign in</button>
+            </form><!-- /form -->
+
+            <!-- <div class="ns-box ns-growl ns-effect-slide ns-type-notice ns-show">
+                <div class="ns-box-inner">
+                    <p>This is a message</p>
+                </div>
+                <span class="ns-close"></span>
+            </div>
+<div id="snackbar">Sign in successfull..</div> -->
+            <a href="#" class="forgot-password">
+                Forgot password?
+            </a>
+
+            <a [routerLink]="['/register']" routerLinkActive="router-link-active"  class="forgot-password">
+                Don't have an account?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+

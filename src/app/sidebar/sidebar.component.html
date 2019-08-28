@@ -1,0 +1,47 @@
+<div class="app">
+  <div id="sidenav">
+    <div class="wrapper">
+      <div class="logo">
+        <a href="#">Customer Dashboard</a>
+        <a href="#" class="nav-icon pull-right"><i class="fa fa-bars"></i></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="active">
+            <a [routerLink]="['customer' ]"
+               routerLinkActive="router-link-active">Profile</a>
+          </li>
+
+          <li>
+            <a [routerLink]="['accounts']"
+               routerLinkActive="router-link-active">Account Details</a>
+          </li>
+
+          <li>
+            <a [routerLink]="['makeTransaction']"
+               routerLinkActive="router-link-active">SendMoney</a>
+          </li>
+          <li>
+            <a [routerLink]="['deposit']"
+               routerLinkActive="router-link-active">Deposit</a>
+          </li>
+          <li>
+            <a [routerLink]="['withdraw']"
+               routerLinkActive="router-link-active">Withdraw</a>
+          </li>
+          <li>
+            <a [routerLink]="['transactions']"
+               routerLinkActive="router-link-active">Transaction List</a>
+          </li>
+          <li>
+            <a [routerLink]="['statement']"
+               routerLinkActive="router-link-active">Statement</a>
+          </li>
+
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

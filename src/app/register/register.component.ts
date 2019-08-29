@@ -13,6 +13,20 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
   }
+  check = function(p,p1) {
+    if (p.value ==p1.value) {
+      document.getElementById('message').style.color = 'green';
+      document.getElementById('message').innerHTML = 'Matching';
+      document.getElementById('icon').classList.add("fa-times-circle");
+      
+    } else {
+      this.dis="not matching";
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = 'Not Matching';
+      document.getElementById('icon').classList.add("fa-times-circle");
+    }
+    
+  }
  
 
 

@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RoutingModule } from './routing.module';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { RoutingModule } from './routing.module';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactComponent,
+    AboutComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     BrowserModule,
